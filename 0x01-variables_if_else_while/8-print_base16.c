@@ -7,7 +7,7 @@ int main(void)
 {
 char c;
 int num;
-for (num = '0'; num < 17; num++)
+for (num = '0'; num < 16; num++)
 {
 if (num < 10)
 {
