@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
- * main -entry
+ * main - entry
  * Return: 0
  */
 int main(void)
 {
-int ch = 'a';
-while (ch <= 'z')
+int num;
+for (num = 5; num < 12; num++)
 {
-putchar(ch);
-c++;
+putchar(num + '0');
 }
 putchar('\n');
 return (0);
