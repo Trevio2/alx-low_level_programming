@@ -5,19 +5,18 @@
  */
 int main(void)
 {
-char c = 'a';
-int num;
-for (num = '0'; num < 16; num++)
+char c;
+int d;
+c = 'a';
+while (d < 10)
 {
-if (num < 10)
-{
-putchar(num + '0');
+putchar(d + '0');
+d++;
 }
-else
+while (c <= 'f')
 {
 putchar(c);
 c++;
-}
 }
 putchar('\n');
 return (0);
