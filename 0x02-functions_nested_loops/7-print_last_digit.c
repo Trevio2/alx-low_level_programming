@@ -6,9 +6,11 @@
  */
 int print_last_digit(int n)
 {
-	int pld = n % 98;
-	if (pld < 0)
-	pld *= -1;
-	_putchar(pld + '0');
-	return (0);
+	int x;
+
+	if (n < 0)
+	n = -n;
+	x = n % 10;
+	_putchar(x + '0');
+	return (x);
 }
