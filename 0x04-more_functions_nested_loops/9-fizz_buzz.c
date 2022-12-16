@@ -1,25 +1,42 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
- * fizz_buzz - printing to 100
+ * main - check the code for Holberton School students.
+ *
+ * Return: void.
  */
-void fizz_buzz(void)
-{
-	int x;
 
-	for (x = 1; x <= 100; x++)
+int main(void)
+{
+
+	int i = 1;
+
+	while (i <= 100)
 	{
-	if (x == 100)
-	printf("Buzz");
-	else if (x % 3 == 0 && x % 5 == 0)
-	printf("FizzBuzz ");
-	else if (x % 3 == 0)
-	printf("Fizz ");
-	else if (x % 5 == 0)
-	printf("Buzz ");
-	else
-	printf("%d ", x)
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+		}
+		else if (i % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%i", i);
+		}
+
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+
+		i++;
 	}
-	printf('\n');
+	putchar('\n');
+	return (0);
+
 }
