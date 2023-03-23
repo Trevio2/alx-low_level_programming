@@ -1,28 +1,13 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _abs - value absolute
- *
- * @n: The int to print
- * Return: Always 0.
+ * _abs - computes absolute value
+ * @t: the integer to be computed
+ * Return: absolute value
  */
-
-int _abs(int n)
+int _abs(int t)
 {
-	if (n < 0)
-	{
-		return (n * (-1));
-	}
-
-	else if (n == 0)
-	{
-		return (0);
-	}
-
+	if (t >= 0)
+	return (t);
 	else
-	{
-		return (n);
-	}
-
+	return (-t);
 }
